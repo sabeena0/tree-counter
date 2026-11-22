@@ -20,3 +20,11 @@ mean absolute error 7.4 trees per image (9.2%).
 Caveats: the test set has only 9 distinct source images, so these figures
 are noisy. Box tightness (mAP50-95) is limited by overlapping crowns and
 imprecise hand-drawn boxes.
+## Caveat found after the baseline run
+
+The dataset images appear to contain small red dots (and possibly faint grey
+boxes) on or around the labelled trees. If these marks are part of the images,
+the model may partly rely on them and the scores above would be optimistic.
+This dependence was not measured. The main model is therefore trained on
+OAM-TCD (clean images) instead, and the Roboflow baseline is kept only as a
+documented comparison.
