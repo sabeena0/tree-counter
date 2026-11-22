@@ -1,0 +1,8 @@
+# Install PyTorch first (CPU build):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+ultralytics
+sahi
+opencv-python-headless
+numpy
+pillow
+pyyaml
